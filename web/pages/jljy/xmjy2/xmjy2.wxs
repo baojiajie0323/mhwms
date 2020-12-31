@@ -1,0 +1,27 @@
+var getBlyyValueIndex = function(array, index, blyy) {
+  console.log("getBlyyValueIndex");
+  for(var i = 0; i < blyy.length; i++){
+    if(blyy[i].QCE01 === array[index]){
+      return i;
+    }
+  }
+}
+var getBlyyValue = function(array, index, blyy) {
+  console.log("getBlyyValue");
+  for(var i = 0; i < blyy.length; i++){
+    if(blyy[i].QCE01 === array[index]){
+      return blyy[i].QCE03;
+    }
+  }
+}
+var getPickerLabel = function (array, value) {
+  // console.log("getPickerLabel");
+  for (var i = 0; i < array.length; i++) {
+    if (array[i].value == value) {
+      return array[i].label;
+    }
+  }
+}
+module.exports.getBlyyValue = getBlyyValue;
+module.exports.getBlyyValueIndex = getBlyyValueIndex;
+module.exports.getPickerLabel = getPickerLabel;

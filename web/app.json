@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/rk/rk",
+    "pages/rk/rksh/rksh",
+    "pages/rk/rksj/rksj",
+    "pages/ck/ck",
+    "pages/ck/ckjh/ckjh",
+    "pages/ck/ckjhqr/ckjhqr",
+    "pages/ck/ckfy/ckfy",
+    "pages/kc/kc",
+    "pages/kc/kccx/kccx",
+    "pages/kc/kcyw/kcyw",
+    "pages/kc/kcpd/kcpd",
+    "pages/th/th",
+    "pages/th/thsm/thsm",
+    "pages/cgsh/cgsh",
+    "pages/cgsh/shsm/shsm",
+    "pages/jljy/jljy",
+    "pages/jljy/jymx/jymx",
+    "pages/jljy/xmjy/xmjy",
+    "pages/jljy/xmjy2/xmjy2"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "咚咚仓储",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "image/main.png",
+        "selectedIconPath": "image/main_sel.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/th/th",
+        "iconPath": "image/th.png",
+        "selectedIconPath": "image/th_sel.png",
+        "text": "退货扫描"
+      },
+      {
+        "pagePath": "pages/cgsh/cgsh",
+        "iconPath": "image/cg.png",
+        "selectedIconPath": "image/cg_sel.png",
+        "text": "采购收货"
+      },
+      {
+        "pagePath": "pages/jljy/jljy",
+        "iconPath": "image/jy.png",
+        "selectedIconPath": "image/jy_sel.png",
+        "text": "进料检验"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

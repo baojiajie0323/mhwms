@@ -1,0 +1,34 @@
+/* order: {"TC_AFR02":"411-MH011710160003","SFB02":"一般工单","SFB81":"2017-10-15T16:00:00.000Z","TC_AFR09":"CMIC5008-01-80","IMA02":"正圆型美容棉-米色","SFB08":6900,"TC_AFR04":"ZY001","TC_AFR05":"平切","GEN02":"李陈","IMA55":"PCS"} */
+
+<template name="order">
+  <view class="weui-panel">
+    <view class="weui-panel__hd ordertitle">
+      <view>{{IMA02}}</view>
+      <text>{{SFB02}}</text>
+    </view>
+    <view class="ordercontent">
+      工单单号
+      <text>{{TC_AFR02}}</text>
+    </view>
+    <view class="ordercontent">
+      产品编号
+      <text>{{TC_AFR09}}</text>
+    </view>
+    <view class="ordercontent">
+      <view class="orderinfo1">生产负责：
+        <text>{{GEN02}}</text>
+      </view>
+      <view class="orderinfo2">工艺：
+        <text>{{TC_AFR04}}{{TC_AFR05}}</text>
+      </view>
+    </view>
+    <view class="ordercontent">
+      <view class="orderinfo1">开单日期：
+        <text>{{SFB81}}</text>
+      </view>
+      <view class="orderinfo2">生产数量：
+        <text>{{SFB08}}{{IMA55}}</text>
+      </view>
+    </view>
+  </view>
+</template>

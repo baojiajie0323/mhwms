@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="tasksubtitle">
+      <text class="textkey">物料名称</text>
+      <text class="textvalue">{{task.TC_TTO13}}</text>
+    </view>
+    <view class="tasksubtitle">
+      <text class="textkey">料件编号</text>
+      <text class="textvalue">{{task.TC_TTO03}}</text>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" class="wlscroll">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-form-preview__bd sjqr_from_preview">
+        <view class="weui-form-preview__item">
+          <view wx:for="{{jymx}}" bindtap="onClickjycs" id="{{sj.TC_TTQ03}}" wx:for-item="sj" class="wlqr_content">
+            <view class="content subtitle">
+              <text>{{index + 1}}. {{sj.TC_TTQ20}}</text>
+            </view>
+            <view class="content">
+              <text>编号</text>
+              <text>{{sj.TC_TTQ03}}</text>
+            </view>
+            <view class="content">
+              <text>展开否</text>
+              <text>{{sj.TC_TTQ22}}</text>
+            </view>
+            <view class="content">
+              <text>结果</text>
+              <text>{{sj.TC_TTQ21 == 'Y' ? '已检验' : (sj.TC_TTQ21 == 'X' ? 'NG' : '未检验')}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="weui-footer weui-footer_fixed-bottom">
+            <view class="btn-area">
+      <button bindtap='ontapsubmit' type="primary">提交</button>
+    </view>
+    <!-- <view class="weui-footer__text">Copyright © 2018 上海满好日用品有限公司</view> -->
+  </view>
+</view>

@@ -1,0 +1,51 @@
+<view class="container">
+  <view class="orderContent">
+    <label>任务单号</label>
+    <label class="ordervalue">{{task.TC_AIP13}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">供应商</label>
+    <label class="infovalue">{{task.TC_AIP03}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">采购单号</label>
+    <label class="infovalue">{{task.TC_AIP04}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">项次</label>
+    <label class="infovalue">{{task.TC_AIP06}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">料件编号</label>
+    <label class="infovalue">{{task.TC_AIP07}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">品名</label>
+    <label class="infovalue">{{task.TC_AIP08}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">采购单位</label>
+    <label class="infovalue">{{task.TC_AIP10}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">采购数量</label>
+    <label class="infovalue">{{task.TC_AIP09}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">本次预收量</label>
+    <label class="infovalue">{{task.TC_AIP11}}</label>
+  </view>
+  <view class="hline"></view>
+  <view class="infoContent">
+    <label class="infokey">本次实收量</label>
+    <input class="infovalue" value="{{shcount}}" bindinput="onInputshCount"></input>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">备次量</label>
+    <input class="infovalue" value="{{bccount}}" bindinput="onInputbcCount"></input>
+  </view>
+  <button bindtap='ontapsubmit' class="submitbtn" type="primary">收货</button>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">Copyright © 2018 上海满好日用品有限公司</view>
+  </view>
+</view>

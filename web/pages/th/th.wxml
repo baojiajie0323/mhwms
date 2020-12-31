@@ -1,0 +1,39 @@
+<view class="container">
+<view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-panel tasktitle">
+        <text class="tasksum">任务总数{{thtask.length}}个</text>
+        <text bindtap="scanCode" class="scantext">扫描</text>
+      </view>
+    </view>
+  </view>
+
+  <scroll-view scroll-y="true" class="taskscroll">
+    <view wx:for="{{thtask}}" wx:for-item="order"  class="weui-form-preview taskcontent">
+      <view  bindtap="onClicktask" data-id="{{order.TC_TTA01}}" class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__value_in-hd orderName">{{index+1}}. {{order.TC_TTA03}}</view>
+          <view>{{order.TC_TTA10}}</view>
+        </view>
+      </view>
+      <view bindtap="onClicktask" data-id="{{order.TC_TTA01}}" class="weui-form-preview__bd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">通知单号</view>
+          <view class="weui-form-preview__value">{{order.TC_TTA01}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">理货日期</view>
+          <view class="weui-form-preview__value">{{order.TC_TTA04}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">退货总箱数（CTN）</view>
+          <view class="weui-form-preview__value">{{order.TC_TTA05}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">已扫描数（PK）</view>
+          <view class="weui-form-preview__value">{{order.TC_TTC11_COUNT}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

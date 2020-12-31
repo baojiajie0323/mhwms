@@ -1,0 +1,48 @@
+<view class="container">
+  <view class="orderContent noborder">
+    <label>库位号</label>
+    <label class="ordervalue">{{kwh}}</label>
+    <image bindtap="scanCode_kw" style="width:32px;height:32px;" src="../../../image/scan.png"></image>
+  </view>
+  <view class="orderContent">
+    <label>跟踪号</label>
+    <label class="ordervalue">{{orderno}}</label>
+    <image bindtap="scanCode" style="width:32px;height:32px;" src="../../../image/scan.png"></image>
+  </view>
+
+  <view class="infoContent">
+    <label class="infokey">料件编号</label>
+    <label class="infovalue">{{kcinfo.TC_AIG01}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">品名</label>
+    <label class="infovalue">{{kcinfo.IMA02}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">库存量</label>
+    <label class="infovalue">{{kcinfo.TC_AIG04}}{{kcinfo.TC_AIC02}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">包装量</label>
+    <label class="infovalue">{{kcinfo.BZL}}{{kcinfo.TC_AIC03}}</label>
+  </view>
+  <!-- <view class="infoContent">
+    <label class="infokey">生产日期</label>
+    <label class="infovalue">{{kcinfo.TC_AIG05}}</label>
+  </view> -->
+  <view class="hline"></view>
+  <view class="infoContent">
+    <label class="infokey">实际数量</label>
+    <input class="infovalue" bindinput="onInputChange"></input>
+  </view>
+  <view class="infoContent">
+    <label>盘点单号</label>
+    <label class="ordervalue">{{pdh}}</label>
+    <image bindtap="scanCode_pd" style="width:24px;height:24px;" src="../../../image/scan.png"></image>
+  </view>
+  <button bindtap='ontapsubmit' class="submitbtn" type="primary">提交</button>
+
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">Copyright © 2018 上海满好日用品有限公司</view>
+  </view>
+</view>

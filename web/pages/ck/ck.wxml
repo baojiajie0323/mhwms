@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="rkcontent" bindtap="ck_jh">
+    <image style="width: 48px; height: 48px;" src="../../image/ck_jh.png"></image>
+    <label>拣货</label>
+  </view>
+  <view class="rkcontent" bindtap="ck_jhqr">
+    <image style="width: 48px; height: 48px;" src="../../image/ck_jh.png"></image>
+    <label>拣货确认</label>
+  </view>
+  <view class="rkcontent" bindtap="ck_fy">
+    <image style="width: 48px; height: 48px;" src="../../image/ck_fy.png"></image>
+    <label>发运</label>
+  </view>
+</view>

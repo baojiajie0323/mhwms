@@ -1,0 +1,180 @@
+@import "../../common/lib/weui.wxss";
+@import "../../common/order.wxss";
+
+.orderContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-bottom:1px solid #ccc;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.orderContent .ordervalue{
+  flex-grow: 1;
+  text-align: right;
+}
+
+.infoContent input{
+  border: 1px solid #eee;
+  padding: 0 10px;
+  text-align: right;
+}
+
+.infoContent{  
+  padding: 2px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #888;
+}
+
+.hline{
+  background-color: #ccc;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.submitbtn{
+  margin: 20px;
+}
+
+.noborder{  
+  padding: 10px 20px 0;
+  margin-bottom: 0px;
+  border-bottom:none;
+}
+
+
+@import "../../common/lib/weui.wxss";
+
+.tasktitle {
+  display: flex;
+  height: 90rpx;
+  padding: 5px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasksubtitle{
+  display: flex;
+  height: 60rpx;
+  padding: 5px 20px;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  justify-content: space-between;
+
+}
+
+.tasksubtitle .textkey{
+  width:100px;
+}
+.tasksubtitle .textvalue{
+  text-align: right;
+}
+
+.taskinput{
+  text-align: right;
+}
+
+.wlscroll {
+  position: absolute;
+  width: 100%;
+  top: 110px;
+  bottom: 75px;
+}
+
+.orderName {
+  font-size: 18px;
+  text-align: left;
+  float: left;
+}
+
+.taskdrive {
+  width: 1px;
+  height: 40%;
+  background-color: darkgray;
+  margin: 0 10px;
+}
+
+.typetext {
+  color: #2964bb;
+}
+.scantext {
+  margin-right: 20rpx;
+  color: #2964bb;
+}
+.xjtext {
+  color: #2964bb;
+}
+.taskscroll {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  bottom: 0;
+}
+
+.taskcontent {
+  margin-bottom: 80rpx;
+}
+
+.userinfo{
+  text-align: left;
+}
+
+
+.sjqr_from_preview {
+  border-bottom: 1px solid #eee;
+}
+
+.wlqr_content {
+  background-color: #eee;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.wlqr_content .title {
+  font-size: 1.1em;
+  color: #777;
+}
+
+.wlqr_content .content {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wlqr_content .content1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wlqr_content .content1 >text {
+  margin-right: 10px;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+}
+
+.sjqr_preview_label{
+  min-width: auto;
+}
+
+.sjqr_preview_value{
+  text-align: right;
+}
+
+.adjustlabel{
+  padding: 5px 0 0;
+}

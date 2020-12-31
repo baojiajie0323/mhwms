@@ -1,0 +1,46 @@
+<view class="container">
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-panel tasktitle">
+        <text class="tasksum">任务总数{{jytask.length}}个</text>
+        <text bindtap="scanCode" class="scantext">扫描</text>
+      </view>
+    </view>
+  </view>
+
+  <scroll-view scroll-y="true" class="taskscroll">
+    <view wx:for="{{jytask}}" wx:for-item="order" class="weui-form-preview taskcontent">
+      <view bindtap="onClicktask" data-id="{{order.TC_TTO01}}" class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__value_in-hd orderName">{{index+1}}. {{order.TC_TTO13}}</view>
+        </view>
+      </view>
+      <view bindtap="onClicktask" data-id="{{order.TC_TTO01}}" class="weui-form-preview__bd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">检验单号</view>
+          <view class="weui-form-preview__value">{{order.TC_TTO01}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">料件编号</view>
+          <view class="weui-form-preview__value">{{order.TC_TTO03}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">收货单号</view>
+          <view class="weui-form-preview__value">{{order.TC_TTO14}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">供应商</view>
+          <view class="weui-form-preview__value">{{order.TC_TTO15}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">送检量</view>
+          <view class="weui-form-preview__value">{{order.TC_TTO17}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">送检时间</view>
+          <view class="weui-form-preview__value">{{order.TC_TTO18}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

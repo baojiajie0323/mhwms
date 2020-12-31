@@ -1,0 +1,50 @@
+@import "../../common/lib/weui.wxss";
+@import "../../common/order.wxss";
+
+.orderContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-bottom:1px solid #ccc;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.orderContent .ordervalue{
+  flex-grow: 1;
+  text-align: right;
+}
+
+.infoContent input{
+  border: 1px solid #eee;
+  padding: 0 10px;
+  text-align: right;
+}
+
+.infoContent{  
+  padding: 2px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #888;
+}
+
+.hline{
+  background-color: #ccc;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.submitbtn{
+  margin: 20px;
+}
+
+.noborder{  
+  padding: 10px 20px 0;
+  margin-bottom: 0px;
+  border-bottom:none;
+}

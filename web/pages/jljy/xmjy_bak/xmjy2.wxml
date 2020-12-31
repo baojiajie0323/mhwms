@@ -1,0 +1,111 @@
+<wxs src="./xmjy2.wxs" module="tools" />
+<view class="container">
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="tasksubtitle">
+        <text>项目名称</text>
+        <text>{{xmjy.TC_TTQ20}}</text>
+      </view>
+      <view class="tasksubtitle">
+        <text>检验量</text>
+        <text>{{xmjy.TC_TTQ07}}</text>
+      </view>
+      <view class="tasksubtitle">
+        <text>检验项次</text>
+        <text>{{xmjy.TC_TTQ02}}</text>
+      </view>
+      <view class="tasksubtitle">
+        <text>检验编号</text>
+        <text>{{xmjy.TC_TTQ01}}</text>
+      </view>
+      <view class="tasksubtitle">
+        <text>是否测量</text>
+        <text>{{xmjy.TC_TTQ15}}</text>
+      </view>
+      <view class="tasksubtitle">
+        <text>标准</text>
+        <text>{{xmjy.TC_TTQ17 || "无"}}</text>
+      </view>
+    </view>
+  </view>
+
+  <scroll-view scroll-y="true" class="wlscroll">
+    <view class="weui-form-preview__bd sjqr_from_preview">
+      <view class="weui-form-preview__item">
+        <view class="subtitle">结果</view>
+        <view class="sizeContent">
+          <view class="sizehead">
+            <view style="width:40px">项次</view>
+            <view style="width:0; flex-grow:1">值</view>
+            <view wx:if="{{xmjy.TC_TTQ15 === 'N'}}" style="width:0; flex-grow:1">不良原因</view>
+          </view>
+          <view class="sizebody">
+            <view wx:for="{{resultlist}}" wx:for-item="sj" wx:for-index="index" class="sizetr">
+              <view style="width:40px">{{index + 1}}</view>
+              <view wx:if="{{xmjy.TC_TTQ15 === 'N'}}" style="width:0; flex-grow:1">
+                <!-- <input bindinput="bindsizeinput" data-index="{{index}}" value="{{sj}}"></input> -->
+                <radio-group class="radio-group" data-index="{{index}}" bindchange="bindsizeinput">
+                  <radio class="radio" value="{{1}}" checked="{{sj == 1}}">
+                    <text>OK</text>
+                  </radio>
+                  <radio class="radio" value="{{2}}" checked="{{sj == 2}}">
+                    <text>NG</text>
+                  </radio>
+                </radio-group>
+              </view>
+              <view wx:else style="width:0; flex-grow:1">
+                <input bindinput="bindsizeinput" data-index="{{index}}" value="{{sj}}"></input>
+              </view>
+              <view wx:if="{{xmjy.TC_TTQ15 === 'N'}}" style="width:0; flex-grow:1">
+                <picker wx:if="{{sj == 2}}" bindchange="bindPickerChange" data-index="{{index}}" value="{{tools.getBlyyValueIndex(resultblyy,index,blyy)}}" range="{{blyy}}" range-key="QCE03">
+                  <view class="picker">
+                    {{tools.getBlyyValue(resultblyy,index,blyy) || "请选择"}}
+                  </view>
+                </picker>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button bindtap='ontapsubmit' type="primary">提交</button>
+    </view>
+  </scroll-view>
+  <!-- <scroll-view scroll-y="true" class="taskscroll">
+    <view wx:for="{{sjlist}}" wx:for-item="order" class="weui-form-preview taskcontent">
+      <view bindtap="onClicktask" data-id="{{order.TC_BAC01}}" class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__value_in-hd orderName">{{index+1}}. {{order.TC_BAC04}}</view>
+          <view>{{order.TC_BAC16 == 'N' ? '未检验': (order.TC_BAC16 == 'Y' ? '检验OK': (order.TC_BAC16 == 'X' ? '检验NG,再检验' : '未知'))}}</view>
+        </view>
+      </view>
+      <view bindtap="onClicktask" data-id="{{order.TC_BAC01}}" class="weui-form-preview__bd">
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">工单单号</view>
+          <view class="weui-form-preview__value">{{order.TC_BAC02}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">物料编号</view>
+          <view class="weui-form-preview__value">{{order.TC_BAC03}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">生产数量</view>
+          <view class="weui-form-preview__value">{{order.TC_BAC17}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">生产工艺</view>
+          <view class="weui-form-preview__value">{{order.TC_BAC18}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">类型</view>
+          <view class="weui-form-preview__value">{{order.TC_BAC19}}</view>
+        </view>
+        <view class="weui-form-preview__item">
+          <view class="weui-form-preview__label">检验员</view>
+          <view class="weui-form-preview__value">{{order.TC_BAC15}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view> -->
+</view>

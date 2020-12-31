@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="rkcontent" bindtap="kc_cx">
+    <image style="width: 48px; height: 48px;" src="../../image/kc_cx.png"></image>
+    <label>查询</label>
+  </view>
+  <view class="rkcontent" bindtap="kc_yw">
+    <image style="width: 48px; height: 48px;" src="../../image/kc_yw.png"></image>
+    <label>移位</label>
+  </view>
+    <view class="rkcontent" bindtap="kc_pd">
+    <image style="width: 48px; height: 48px;" src="../../image/kc_pd.png"></image>
+    <label>盘点</label>
+  </view>
+</view>

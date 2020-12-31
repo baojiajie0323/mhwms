@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<view class="container">
+<view>
+
+<button open-type="getUserInfo">用户授权信息</button>
+
+</view>
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo && canIUse}}">
+      <button class="authorbtn" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录微信 </button>
+      <text class="welcometext">{{welcomeText}}</text>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <block wx:if="{{hasUserInfo}}">
+    <view class="page-section">
+      <view class="page-section-title">请输入账号信息后开始管理</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input class="weui-input" value="{{username}}" bindinput="onbindInput_user" placeholder="请输入账号" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <input class="weui-input" password="{{true}}" value="{{password}}" bindinput="onbindInput_pass" placeholder="请输入密码" />
+          </view>
+        </view>
+      </view>
+      <view class="page-section-title">账号和密码为管理员给你分配的工号，如有疑问，请联系管理员</view>
+    </view>
+    <button bindtap="startbg" class="startbgbtn" type="primary">开始管理</button>
+  </block>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">Copyright © 2018 上海满好日用品有限公司 |
+      <text bindtap='ontapMore' class="reloadserver"> 更多操作</text>
+    </view>
+  </view>
+</view>

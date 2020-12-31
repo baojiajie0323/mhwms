@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="orderContent">
+    <label style="flex-grow:1">单据编号</label>
+    <image bindtap="scanCode" style="width:32px;height:32px;" src="../../../image/scan.png"></image>
+  </view>
+  <view class="orderContent">
+    <label style="white-space:nowrap;" class="ordervalue">{{orderno}}</label>
+  </view>
+  <block wx:for="{{jhinfo}}" wx:for-item="jh">
+    <view class="infoContent">
+      <label class="infokey">料件编号</label>
+      <label class="infovalue">{{jh.TC_AIF01}}</label>
+    </view>
+    <view class="infoContent">
+      <label class="infokey">品名</label>
+      <label class="infovalue">{{jh.IMA02}}</label>
+    </view>
+    <view class="infoContent">
+      <label class="infokey">分配数量</label>
+      <label class="infovalue">{{jh.FPL}}{{jh.TC_AIC02}}</label>
+    </view>
+    <view class="infoContent">
+      <label class="infokey">包装数量</label>
+      <label class="infovalue">{{jh.BZL}}{{jh.TC_AIC03}}</label>
+    </view>
+    <view class="infoContent">
+      <label class="infokey">本次拣货量</label>
+      <label class="infovalue">{{jh.JHL}}{{jh.TC_AIC02}}</label>
+    </view>
+    <view class="hline"></view>
+  </block>
+
+
+  <button bindtap='ontapsubmit' class="submitbtn" type="primary">拣货确认</button>
+
+  <!-- <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">Copyright © 2018 上海满好日用品有限公司</view>
+  </view> -->
+</view>

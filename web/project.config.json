@@ -1,0 +1,165 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.5.4",
+	"appid": "wx96c162d18181c39d",
+	"projectname": "%E5%92%9A%E5%92%9A%E4%BB%93%E5%82%A8",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 15,
+			"list": [
+				{
+					"id": 0,
+					"name": "入库",
+					"pathName": "pages/rk/rk",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "出库",
+					"pathName": "pages/ck/ck",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "库存",
+					"pathName": "pages/kc/kc",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "入库—收货",
+					"pathName": "pages/rk/rksh/rksh",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "库存-查询",
+					"pathName": "pages/kc/kccx/kccx",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "库存-盘点",
+					"pathName": "pages/kc/kcpd/kcpd",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "入库-上架",
+					"pathName": "pages/rk/rksj/rksj",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "出库-发运",
+					"pathName": "pages/ck/ckfy/ckfy",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "库存-移位",
+					"pathName": "pages/kc/kcyw/kcyw",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "出库-拣货",
+					"pathName": "pages/ck/ckjh/ckjh",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "退货",
+					"pathName": "pages/th/th",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "采购收货",
+					"pathName": "pages/cgsh/cgsh",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "采购收货扫描",
+					"pathName": "pages/cgsh/shsm/shsm",
+					"query": "task={\"TC_AIP13\":\"1122233344\",\"TC_AIP09\":\"122\"}",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "采购收货扫描",
+					"pathName": "pages/ck/ckjhqr/ckjhqr",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "拣货确认",
+					"pathName": "pages/ck/ckjhqr/ckjhqr",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "进料检验",
+					"pathName": "pages/jljy/jljy",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 17,
+					"name": "检验参数（展开）",
+					"pathName": "pages/jljy/xmjy/xmjy",
+					"query": "orderno=5Q1-MH012004200002&xmbh=C01",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "进料检验项目明细",
+					"pathName": "pages/jljy/jymx/jymx",
+					"query": "task=%7B%22TC_TTO13%22%3A%22%E7%94%9F%E9%B2%9C%E9%A3%9F%E5%93%81%E4%B8%81%E8%85%88%E6%89%8B%E5%A5%97100%E5%8F%AA%E7%9B%92%E8%A3%85(%E5%B0%8F)%22%2C%22TC_TTO01%22%3A%225Q1-MH012004280014%22%2C%22TC_TTO03%22%3A%22GLNIT027%22%2C%22TC_TTO14%22%3A%22331-MH012004280001%22%2C%22TC_TTO15%22%3A%22CT%22%2C%22TC_TTO17%22%3A%221944.0%20BOX%22%2C%22TC_TTO18%22%3A%2220%2F04%2F28%2016%3A37%3A30%22%7D",
+					"scene": null
+				}
+			]
+		}
+	}
+}

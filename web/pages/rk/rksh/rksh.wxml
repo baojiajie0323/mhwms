@@ -1,0 +1,42 @@
+<view class="container">
+  <view class="orderContent">
+    <label>跟踪号</label>
+    <label class="ordervalue">{{orderno}}</label>
+    <image bindtap="scanCode" style="width:32px;height:32px;" src="../../../image/scan.png"></image>
+  </view>
+
+  <view class="infoContent">
+    <label class="infokey">单据编号</label>
+    <label class="infovalue">{{shinfo.TC_AID09}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">材料编号</label>
+    <label class="infovalue">{{shinfo.TC_AID01}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">品名</label>
+    <label class="infovalue">{{shinfo.IMA02}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">收货量</label>
+    <label class="infovalue">{{shinfo.TC_AID04}}{{shinfo.TC_AIC02}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">包装量</label>
+    <label class="infovalue">{{shinfo.BZL}}{{shinfo.TC_AIC03}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">差异量</label>
+    <label class="infovalue">{{shinfo.SYL}}{{shinfo.TC_AIC02}}</label>
+  </view>
+  <view class="hline"></view>
+  <view class="infoContent">
+    <label class="infokey">实收量</label>
+    <input class="infovalue" bindinput="onInputChange" ></input>
+  </view>
+  <button bindtap='ontapsubmit' class="submitbtn" type="primary">收货</button>
+
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">Copyright © 2018 上海满好日用品有限公司</view>
+  </view>
+</view>

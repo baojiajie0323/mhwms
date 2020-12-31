@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="rkcontent" bindtap="rk_sh">
+    <image style="width: 48px; height: 48px;" src="../../image/rk_sh.png"></image>
+    <label>收货</label>
+  </view>
+  <view class="rkcontent" bindtap="rk_sj">
+    <image style="width: 48px; height: 48px;" src="../../image/rk_sj.png"></image>
+    <label>上架</label>
+  </view>
+</view>

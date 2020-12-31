@@ -1,0 +1,52 @@
+@import "../common/lib/weui.wxss";
+@import "../common/steps/index.wxss";
+
+.tasktitle {
+  display: flex;
+  height: 90rpx;
+  align-items: center;
+  font-size: '24px';
+}
+
+.tasksum {
+  padding: 0 0 0 20px;
+  flex-grow: 1;
+}
+
+.orderName {
+  font-size: 18px;
+  text-align: left;
+  float: left;
+}
+
+.taskdrive {
+  width: 1px;
+  height: 40%;
+  background-color: darkgray;
+  margin: 0 10px;
+}
+
+.typetext {
+  color: #2964bb;
+}
+.scantext {
+  margin-right: 20rpx;
+  color: #2964bb;
+}
+.xjtext {
+  color: #2964bb;
+}
+.taskscroll {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  bottom: 0;
+}
+
+.taskcontent {
+  margin-bottom: 80rpx;
+}
+
+.userinfo{
+  text-align: left;
+}

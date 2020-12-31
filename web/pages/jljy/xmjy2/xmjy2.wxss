@@ -1,0 +1,139 @@
+@import "../../common/lib/weui.wxss";
+
+.tasktitle {
+  display: flex;
+  height: 90rpx;
+  padding: 5px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasksubtitle{
+  display: flex;
+  height: 60rpx;
+  padding: 0px 20px;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  justify-content: space-between;
+}
+
+.taskinput{
+  text-align: right;
+}
+
+.wlscroll {
+  position: absolute;
+  width: 100%;
+  top: 185px;
+  bottom: 0;
+}
+
+.orderName {
+  font-size: 18px;
+  text-align: left;
+  float: left;
+}
+
+.taskdrive {
+  width: 1px;
+  height: 40%;
+  background-color: darkgray;
+  margin: 0 10px;
+}
+
+.typetext {
+  color: #2964bb;
+}
+.scantext {
+  margin-right: 20rpx;
+  color: #2964bb;
+}
+.xjtext {
+  color: #2964bb;
+}
+.taskscroll {
+  position: absolute;
+  width: 100%;
+  top: 150px;
+  bottom: 0;
+}
+
+.taskcontent {
+  margin-bottom: 80rpx;
+}
+
+.userinfo{
+  text-align: left;
+}
+
+
+.sjqr_from_preview {
+  border-bottom: 1px solid #eee;
+}
+
+.wlqr_content {
+  background-color: #eee;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.wlqr_content .title {
+  font-size: 1.1em;
+  color: #777;
+}
+
+.wlqr_content .content {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wlqr_content .content1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wlqr_content .content1 >text {
+  margin-right: 10px;
+}
+
+.subtitle {
+  text-align: left;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+}
+
+.sjqr_preview_label{
+  min-width: auto;
+}
+
+.sjqr_preview_value{
+  text-align: right;
+}
+
+.adjustlabel{
+  padding: 5px 0 0;
+}
+
+.sizeContent {
+  margin: 5px 0;
+  text-align: left;
+  border: 1px solid black;
+}
+
+.sizeContent .sizehead {
+  display: flex;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.sizeContent .sizebody .sizetr {
+  display: flex;
+  padding: 0 10px;
+  text-align: center;
+  border-top: 1px solid black;
+}

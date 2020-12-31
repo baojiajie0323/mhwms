@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="orderContent">
+    <label style="flex-grow:1">单据编号</label>
+    <image bindtap="scanCode" style="width:32px;height:32px;" src="../../../image/scan.png"></image>
+  </view>
+  
+  <view class="orderContent">
+  <label style="white-space:nowrap;" class="ordervalue">{{orderno}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">部门</label>
+    <input class="infovalue" bindinput="onInputBmChange"></input>
+  </view>
+  <view class="infoContent">
+    <label>收货人</label>
+    <input class="infovalue" bindinput="onInputShrChange"></input>
+  </view>
+    <view class="infoContent">
+    <label>车牌号</label>
+    <input class="infovalue" bindinput="onInputCphChange"></input>
+  </view>
+    <view class="infoContent">
+    <label>司机姓名</label>
+    <input class="infovalue" bindinput="onInputSjnameChange"></input>
+  </view>
+    <view class="infoContent">
+    <label>身份证</label>
+    <input class="infovalue" bindinput="onInputCardnoChange"></input>
+  </view>
+  <button bindtap='ontapsubmit' class="submitbtn" type="primary">发运</button>
+
+  <!-- <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">Copyright © 2018 上海满好日用品有限公司</view>
+  </view> -->
+</view>

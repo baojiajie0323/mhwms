@@ -1,0 +1,56 @@
+<view class="container">
+  <view class="orderContent">
+    <label>通知单号</label>
+    <label class="ordervalue">{{orderno}}</label>
+  </view>
+
+
+  <!-- <view class="orderContent">
+    <button bindtap="onClickPrev" disabled="{{curkcIndex <= 0}}" size="mini">上一个        </button>
+    <label>{{curkcIndex + 1}}/{{kcinfo.length}}</label>
+    <button bindtap="onClickNext" disabled="{{curkcIndex >= kcinfo.length - 1}}" size="mini">下一个</button>
+  </view> -->
+  <view class="infoContent">
+    <label class="infokey">退货客户</label>
+    <label class="infovalue">{{thkh}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">理货日期</label>
+    <label class="infovalue">{{lhrq}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">退货总箱数(CTN)</label>
+    <label class="infovalue">{{thzxx}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">退货性质</label>
+    <label class="infovalue">{{thxz}}</label>
+  </view>
+  <view class="hline"></view>
+  <view class="infoContent">
+    <label class="infokey">零售条码</label>
+    <label class="infovalue">{{lsInfo.IMAUD03}}</label>
+    <image bindtap="scanCode" style="width:32px;height:32px;" src="../../../image/scan.png"></image>
+  </view>
+    <view class="infoContent">
+    <label class="infokey">料件编号</label>
+    <label class="infovalue">{{lsInfo.IMA01}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">品名</label>
+    <label class="infovalue">{{lsInfo.IMA02}}</label>
+  </view>
+  <view class="infoContent">
+    <label class="infokey">单位</label>
+    <label class="infovalue">PK</label>
+  </view>
+  <view class="hline"></view>
+  <view class="infoContent">
+    <label class="infokey">数量</label>
+    <input class="infovalue" value="{{shcount}}" bindinput="onInputCount"></input>
+  </view>
+  <button bindtap='ontapsubmit' class="submitbtn" type="primary">收货</button>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__text">Copyright © 2018 上海满好日用品有限公司</view>
+  </view>
+</view>
